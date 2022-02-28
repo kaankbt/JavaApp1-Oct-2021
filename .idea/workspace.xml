@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a07c3aea-dc9a-4505-a858-b7a493d20a98" name="Changes" comment="" />
+    <list default="true" id="a07c3aea-dc9a-4505-a858-b7a493d20a98" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/SampleCodes/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SampleCodes/Sample/src/main/java/org/csystem/classworks/linkedList/example1/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SampleCodes/Sample/src/main/java/org/csystem/classworks/linkedList/example2/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SampleCodes/Sample/src/main/java/org/csystem/classworks/reflection/example1/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SampleCodes/Sample/src/main/java/org/csystem/classworks/reflection/example1/example2/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SampleCodes/Sample/src/main/java/org/csystem/classworks/stack/example1/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SampleCodes/Sample/src/main/java/org/csystem/classworks/stack/example2/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SampleCodes/Sample/src/main/java/org/csystem/classworks/stack/example3/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SampleCodes/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/SampleCodes/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SampleCodes/Sample/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/SampleCodes/Sample/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1644485125982</updated>
       <workItem from="1644485128744" duration="435000" />
+      <workItem from="1646064133640" duration="14000" />
     </task>
     <servers />
   </component>
