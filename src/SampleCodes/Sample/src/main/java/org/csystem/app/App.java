@@ -1,41 +1,32 @@
 /*----------------------------------------------------------------------------------------------------------------------
-    Stream arayüzlerinin reduce metodu
+    Aşağıdaki örnekte çift sayılar başa, tek sayılar sona eklenmiştir.
 ----------------------------------------------------------------------------------------------------------------------*/
 package org.csystem.app;
 
-import org.csystem.app.data.factory.NumberFactory;
 import org.csystem.util.console.Console;
-import org.csystem.util.console.command.CommandLineUtil;
-import org.csystem.util.numeric.NumberUtil;
 
-import java.nio.file.Path;
-import java.util.stream.IntStream;
+import java.util.ArrayDeque;
+import java.util.Random;
 
 class App {
     public static void main(String[] args)
     {
-        try {
-            CommandLineUtil.checkForLengthEqual(args, 1, "Wrong number of arguments", 1);
-            var factory = NumberFactory.loadFromTextFile(Path.of(args[0]));
-            var numbers = factory.getNumbers();
+        var random = new Random();
+        var count = Console.readInt("Input a number:");
+        var deque = new ArrayDeque<Integer>();
 
-            var value = Console.readInt("Input a number:");
+        for (int i = 0; i < count; ++i) {
+            int val = random.nextInt(100);
 
-            IntStream.of(numbers)
-                    .filter(a -> a > value)
-                    .filter(NumberUtil::isPrime)
-                    .forEach(a -> Console.write("%d ", a));
-            Console.writeLine();
-
-            var result = IntStream.of(numbers)
-                    .filter(a -> a > value)
-                    .filter(NumberUtil::isPrime)
-                    .reduce(1, (r, a) -> r * a);
-
-            Console.writeLine("Total:%d", result);
+            Console.write("%d ", val);
+            if (val % 2 == 0)
+                deque.addFirst(val);
+            else
+                deque.addLast(val);
         }
-        catch (Throwable ex) {
-            ex.printStackTrace();
-        }
+        Console.writeLine();
+
+        deque.forEach(v -> Console.write("%d ", v));
+        Console.writeLine();
     }
 }
